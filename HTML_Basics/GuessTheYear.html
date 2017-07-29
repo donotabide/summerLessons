@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //While loops run until the condition is false.
+            var secretYear = "42";
+            var guess = "";
+            var numGuesses = 0;
+             
+            while(guess != secretCode && numGuesses < 3){
+                guess = prompt("What is the secret code?");
+                numGuesses = numGuesses + 1;
+            }
+             
+            if(guess != secretCode){
+                alert("Access Denied");
+                open('about:blank', '_self');
+            } else {
+                alert("Access Granted");
+            }        
+        </script>
+    </head>
+    <body>
+        <h1>Loops</h1>
+    </body>
+</html>

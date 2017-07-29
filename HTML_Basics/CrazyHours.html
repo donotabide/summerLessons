@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show_image(option) {
+                var img = document.createElement("img");
+                img.width = 600;
+                img.height = 450;
+                
+                if(option == 1){
+                    img.src = "images/AdventureTime.gif";
+                } else if (option == 2){
+                    img.src = "images/highFive.gif";
+                } else if (option == 3){
+                    img.src = "images/timeToDance.gif";
+                } else if (option == 4){
+                    img.src = "images/pancakes.gif";
+                } else if (option == 5){
+                    img.src = "images/noMorePajamas.gif";
+                } else {
+                    img.src = "images/pewPew.gif";
+                }
+                // This next line will just add it to the <body> tag
+                document.body.appendChild(img);
+            }
+        </script>      
+    </head>    
+    <body>
+        <h1>Adventure Time Gif Generator!</h1>
+         
+        <h2>This is Rick's Website!</h2>
+        
+        <button onclick="show_image(1)" value="option1">
+            Yays!
+        </button> 
+        
+        <button onclick= "show_image(2)" value="option2">
+            Pancakes
+        </button>
+        
+        <button onclick= "show_image(3)" value="option3">
+            Too Hot!
+        </button>
+        
+        <button onclick= "show_image(4)" value="option4">
+            Dance!
+        </button>
+        
+        <button onclick= "show_image(5)" value="option5">
+            Whatevs...
+        </button>
+        
+        <button onclick= "show_image(6)" value="option2">
+            Pew
+        </button>
+        
+        <p><br /></p>
+    </body>
+</html>
