@@ -22,6 +22,13 @@ int main(){
   // this data type
   string description = "This is a c++ class!";
 
+
+  // Booleans are either true or false
+  bool campIsCool = true;
+  bool bullyingAllowed = false;
+
+
+  // Testing statements
   cout << endl << endl << endl;
   cout << "I was born in the year " << year << endl;
   cout << "So by the end this year I will be " << 2017 - year << endl;
@@ -29,6 +36,8 @@ int main(){
   cout << "Some of the digits of Pi are: " << pi << "."<< endl;
   cout << "Rick's name starts with: " << letter << endl;
   cout << "What class is this? --> " << description << "\n";
+  cout << "Is camp cool? --> " << campIsCool << endl;
+  cout << "Is bullying allowed? --> " << bullyingAllowed << endl;
   cout << "\n\n\n";
 
 }
