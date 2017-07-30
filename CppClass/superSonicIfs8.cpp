@@ -6,6 +6,7 @@
 int main(){
 
   int speed = 1000;
+  cout << "\n\n";
   if((speed/767)<1){
     cout << "Mach 0" << endl;
   } else if ((speed/767)<2){
@@ -20,7 +21,9 @@ int main(){
     cout << "Mach 5" << endl;
   } else cout << "Above Mach 5" << endl;
 
-
+  double intMach = speed/767;
   double realMach = speed/767.0;
-  cout << "Exact Mach is: "<< realMach << endl;
+
+  cout << "Integer Mach is: "<< intMach << endl;
+  cout << "Exact Mach is: "<< realMach << "\n\n\n";
 }
