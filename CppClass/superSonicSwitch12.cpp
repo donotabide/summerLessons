@@ -6,6 +6,7 @@
 int main(){
 
   int speed = 1000;
+  cout << "What is your ship's max speed \n ";
   cin >> speed;
   cout << "\n";
 
@@ -31,6 +32,26 @@ int main(){
       default:
         cout << "Above Mach 5" << endl;
   }
+
+  int option;
+  cout << "Choose your case 1/2/3: "<< endl;
+  cin >> option;
+  switch(option){
+    case 1:
+      cout << "Option 1\n";
+      break;
+    case 2:
+      cout << "Option 2\n";
+      break;
+    case 3:
+      cout << "Option 3\n";
+      break;
+    default:
+      cout << "Default option\n";
+
+  }
+
+
   cout << "\n\n";
   //
   // double intMach = speed/767;
