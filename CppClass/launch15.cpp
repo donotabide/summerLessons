@@ -15,9 +15,10 @@ int main(){
   cout << "\n\nStart Program \n\n";
 
   if(launchRocket()){
-    for(int i = 10; i > 0; i--)
+    cout << endl << endl;
+    for(int i = 10; i >= 0; i--)
       cout << i << endl;
-    cout << "Lift Off";
+    cout << "\n\nLift \n\n";
   } else
-    cout << "Launch Aborted";
+    cout << "\n\nLaunch Aborted\n\n";
 }
