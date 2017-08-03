@@ -1,9 +1,10 @@
-#include "header1.h"
+#include <iostream>
+#include <random>
+#include <string>
 
 using namespace std;
 
-void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill, int &wins);
-void savePlayerStats(string name, int str, int def, int armor, int skill, int wins);
+void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill);
 
 int main() {
   random_device rd;
@@ -25,11 +26,11 @@ int main() {
 
   cout << "\n\nSetup Player 1" << endl;
   //cin.ignore();
-  setupPlayerStats(player1Name, player1Str, player1Def, player1Armor, player1Skill, player1Wins);
+  setupPlayerStats(player1Name, player1Str, player1Def, player1Armor, player1Skill);
 
   cout << "\n\nSetup Player 2" << endl;
   //cin.ignore();
-  setupPlayerStats(player2Name, player2Str, player2Def, player2Armor, player2Skill, player2Wins);
+  setupPlayerStats(player2Name, player2Str, player2Def, player2Armor, player2Skill);
 
   int player1Health = 20;
   int player2Health = 20;
@@ -93,7 +94,7 @@ int main() {
   else // Print something that says who won
 }
 
-void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill, int &wins) {
+void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill) {
 
     cout << "Name: ";
     //To do: set player name
@@ -122,17 +123,17 @@ void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill, 
         /* Setting Player Armor */
         cout << points << " points left." << endl;
         cout << "Player Armor: ";
-        // Get player armor
+        // To do: Get player armor
 
-        // Subtract armor from points
+        // To do: Subtract armor from points
 
 
         /* Setting Player Skill */
         cout << points << " points left." << endl;
         cout << "Player Skill: ";
-        // Get player skill
+        // To do: Get player skill
 
-        // Subtract player skill from points
+        // To do: Subtract player skill from points
 
         if (points >= 0) {
             accepted = true;
