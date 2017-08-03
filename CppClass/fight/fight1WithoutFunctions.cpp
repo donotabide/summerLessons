@@ -25,32 +25,46 @@ int main() {
 
   cout << "\n\nSetup Player 1" << endl;
   // To Do: get player1 Stats
-  // hint --> use cin for each
+  cout << "Player1 Name: ";
+  cin >> player1Name;
+  cout << "Player1 Strength: ";
+  cin >> player1Str;
+  cout << "Player1 Defence: ";
+  cin >> player1Def;
+  cout << "Player1 Armor: ";
+  cin >> player1Armor;
+  cout << "Player1 Skill: ";
+  cin >> player1Skill;
 
 
   cout << "\n\nSetup Player 2" << endl;
   // To Do: get player2 Stats
-  // hint --> use cin for each
+  cout << "Player2 Name: ";
+  cin >> player2Name;
+  cout << "Player2 Strength: ";
+  cin >> player2Str;
+  cout << "Player2 Defence: ";
+  cin >> player2Def;
+  cout << "Player2 Armor: ";
+  cin >> player2Armor;
+  cout << "Player2 Skill: ";
+  cin >> player2Skill;
 
   // To DO: Set both players health to a value
   // that you wish --> either random or you decide
-  int player1Health; // = ?;
-  int player2Health; // = ?;
+  int player1Health = 200; // = ?;
+
+  int player2Health = 200; // = ?;
 
   // Turns initially set to 0
   int turns = 0;
-
-  // cout << "\n\n";
-  // cout << player1Name << " - " << player1Wins << " Wins" << endl;
-  // cout << "- vs. -" << endl;
-  // cout << player2Name << " - " << player2Wins << " Wins" << endl;
 
   cout << "\n\n\nFIGHT!\n\n\n";
     // Fight Loop
     // To Do: Set conditions in loop
     // hint base it on both players health and an
     // upper limit for terms
-  while (!Code here!) {
+  while (player1Health > 0 && player2Health >0 && turns < 100) {
       cin.ignore();
       // setting variables for attack and damage
       int attackRoll;
@@ -96,10 +110,7 @@ int main() {
       turns++;
 
   }
-  // if(player1Health > player2Health)
-  //   player1Wins++;
-  // else player2Wins++;
-
-  // savePlayerStats(player1Name, player1Str, player1Def, player1Armor, player1Skill, player1Wins);
-  // savePlayerStats(player2Name, player2Str, player2Def, player2Armor, player2Skill, player2Wins);
+  if(player1Health > player2Health)
+    cout << "\n\n" << player1Name << " won!\n\n";
+  else cout << "\n\n" << player2Name << " won!\n\n";
 }
